@@ -1,0 +1,15 @@
+body {
+  font-family: Georgia, serif;
+  font-size: medium;
+  line-height: 174X;
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
