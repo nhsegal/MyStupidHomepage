@@ -1,15 +1,102 @@
 body {
-  font-family: Georgia, serif;
-  font-size: medium;
-  line-height: 174X;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    font-weight: 100;
 }
 
-input {
-  border: 1px solid grey;
-  border-radius: 4px;
+a {
+  text-decoration: none;
 }
 
-textarea {
-  border: 1px solid grey;
-  border-radius: 4px;
+header {
+  background-color: #1F2937;
+  color:  #F9FAF8;
+  font-size: 28px;
+  padding: 16px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
+
+header ul {
+  list-style: none;
+  display: flex;
+  color: #E5E7EB;
+  font-size: 18px;
+  gap: 1em;
+  margin: 0px;
+  justify-content: flex-end;
+}
+
+header a, header a:link, header a:visited {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+.top {
+  
+  background: #E5E7EB;
+  color: #1F2937;
+  text-align: left;
+  padding-left: 50px; 
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.top a, .top a:link, .top a:visited {
+  text-decoration: underline;
+  color: #1F2937;
+}
+
+.welcome {
+  background: inherit;
+  font-size: 18px;
+  font-weight: 900;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+.middle {
+  display: flex;
+  justify-content:space-around;
+  gap: 20px;
+  padding: 10px 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;;
+  border: 1px solid #1F2937;
+  height: 180px;
+  width: 180px;
+}
+
+.cardtitle {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card img {
+  margin-top: 0px;
+  width: 170px;
+  height: 125px;
+  object-fit: cover;
+}
+
+.cardtext {
+  font-size: 14px;
+  text-align: center;
+}
+
+.about {
+  display: none;
+}
+
+.about:hover {
+  display: block;
+  font-size: 14px;
+}
+
+
