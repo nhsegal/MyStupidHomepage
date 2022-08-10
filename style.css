@@ -56,13 +56,28 @@ header a, header a:link, header a:visited {
   padding-bottom: 10px;
 }
 
-.middle {
+.middletitle{
+  padding: 10px 50px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #1F2937;
+}
+
+.deck {
+  padding: 5px 50px;
   display: flex;
   justify-content:flex-start;
   flex-flow: row wrap;
   gap: 20px;
-  padding: 10px 50px;
 }
+
+
+.deck a, deck a:link, deck a:visited {
+  text-decoration: none;
+  color: #1F2937;
+}
+
+
 
 .card {
   display: flex;
