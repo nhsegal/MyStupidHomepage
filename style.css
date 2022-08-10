@@ -4,9 +4,6 @@ body {
     font-weight: 100;
 }
 
-a {
-  text-decoration: none;
-}
 
 header {
   background-color: #1F2937;
@@ -34,7 +31,6 @@ header a, header a:link, header a:visited {
 }
 
 .top {
-  
   background: #E5E7EB;
   color: #1F2937;
   text-align: left;
@@ -69,6 +65,7 @@ header a, header a:link, header a:visited {
   justify-content:flex-start;
   flex-flow: row wrap;
   gap: 20px;
+  padding-bottom: 50px;
 }
 
 
@@ -77,8 +74,6 @@ header a, header a:link, header a:visited {
   color: #1F2937;
 }
 
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -86,6 +81,8 @@ header a, header a:link, header a:visited {
   border: 1px solid #1F2937;
   height: 168px;
   width: 180px;
+  align-items: center;
+  padding: 7px 3px;
 }
 
 .cardtitle {
@@ -115,4 +112,18 @@ header a, header a:link, header a:visited {
   font-size: 14px;
 }
 
+footer {
+  background-color: #1F2937;
+  color:  #F9FAF8;
+  font-size: 14px;
+  padding: 16px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
+}
+
+footer a, footer a:link, footer a:visited {
+  text-decoration: underline;
+  color:  #F9FAF8;
+}
