@@ -93,9 +93,12 @@ header a, header a:link, header a:visited {
 
 .card img {
   margin-top: 0px;
-  width: 170px;
-  height: 125px;
-  object-fit: cover;
+  max-width: 170px;
+  max-height: 115px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cardtext {
@@ -126,4 +129,17 @@ footer {
 footer a, footer a:link, footer a:visited {
   text-decoration: underline;
   color:  #F9FAF8;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  color: #1F2937;
+  padding: 5px 20px;
+
+}
+
+.buttoncontainer {
+  justify-self: end;
+  margin-top: auto;
 }
