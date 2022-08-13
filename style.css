@@ -106,10 +106,6 @@ header a, header a:link, header a:visited {
   text-align: center;
 }
 
-.about {
-  display: none;
-}
-
 .about:hover {
   display: block;
   font-size: 14px;
@@ -145,20 +141,20 @@ button {
 }
 
 
-.cardNote {
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 50%; /* Full height */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.noteContent {
+.modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;

@@ -1,24 +1,18 @@
-let aboutbuggy = document.getElementById("aboutbuggy");
+
+let modals = document.getElementsByClassName('modal');
+let btns = document.getElementsByClassName("openmodal");
+let spans = document.getElementsByClassName("close");
 
 
-function showNotes(section) {
-    section.style.display = "block";
+
+for(let i=0;i<btns.length;i++){
+    btns[i].onclick = function() {
+        modals[i].style.display = "block";
+        console.log("clicked");
+    }
 }
-
-notesClose.onclick = function () {
-    notesModal.style.display = "none";
+for(let i=0;i<spans.length;i++){
+    spans[i].onclick = function() {
+        modals[i].style.display = "none";
+    }
 }
-
-function showNotes(){
-    let 
-}
-switch(expression) {
-    case x:
-      // code block
-      break;
-    case y:
-      // code block
-      break;
-    default:
-      // code block
-  }

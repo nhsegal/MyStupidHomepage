@@ -17,8 +17,8 @@
       <li><a href="#">About Me</a></li>
       <li><a href="#">Learn to Code</a></li>
       <li><a href="#">Other Sims for Physics</a></li>
-  </ul>
-</header>
+    </ul>
+  </header>
 
     <div class="top">
       <div class="welcome">Welcome!</div>
@@ -29,102 +29,139 @@
     </div>
 
     <div class="middle">
-     <div class="middletitle">Simulations </div> 
-      <div class="deck">
-
-      <div class="card">
-       
-        <a href="https://nhsegal.github.io/MotionLab/">
-          <div class="cardtitle">1-D Motion Lab</div>
-          <img src="imgs/buggy.jpg" alt="Tumble buggy">
-        </a>
-        <div class="buttoncontainer"><button>About</button></div>
-          <div id="aboutbuggy">
-             
+      <div class="middletitle">Simulations </div> 
+        <div class="deck">
+          <div class="card">
+            <a href="https://nhsegal.github.io/MotionLab/">
+              <div class="cardtitle">1-D Motion Lab</div>
+              <img src="imgs/buggy.jpg" alt="Tumble buggy">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="buggyButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                A virtual version of the constant velocity and constant acceleration labs popularized by Modeling Physics. The ruler is draggable. 
+                The direction of the toys can be reversed by clicking on their hoods. 
+                </p>
+              </div>
+            </div>
           </div>
-      </div>
-
-      <div class="card">
-        <a href="https://nhsegal.github.io/PopperLab/">
-        <div class="cardtitle">Popper Lab</div>
-        <img src="imgs/popper.jpg" alt="Spring Gun">
-        </a>
-        <div class="buttoncontainer"><button>About</button></div>
-       
-        <!--
-      This is a virtual version of a real lab I did with students during the energy unit. Students vary the mass of a projectile launched vertically from a spring toy and measure the maximum height. 
-       From these measurements they determine the elastic energy stored in the toy. In the sim, the energy and color of the toy launcher is randomized. The rulers are draggable.
-   
-        -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/BalanceBoard/">
-        <div class="cardtitle">Balance Board</div>
-        <img src="imgs/pegboard.jpg" alt="Peg board balance">
-      </a>
-      <div class="buttoncontainer"><button>About</button></div>
-        <!--
-       This is a virtual version of an activity with pegboard that students do to explore torque or center of mass. Although PhET and Physicsclassroom.com have excellent torque sims, 
-       I wanted something that clearly showed the vertical placement of the blocks on the pegboard does not affect its balance.
- 
-        -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/TheAmazingWaveGame/">
-        <div class="cardtitle">The Wave Game</div>
-        <img src="imgs/slinky.jpg" alt="Slinky">
-      </a>
-      <div class="buttoncontainer"><button>About</button></div>
-        <!--
-        Like PhET Waves on a String, but students are challenged to apply their knowledge of interference and reflection to knock over "cups" places near the string. 
-        -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/StickyCollisions/">
-        <div class="cardtitle">Sticky Collisions</div>
-        <img src="imgs/collisioncart.jpg" alt="Momentum Carts">
-      </a>
-      <div class="buttoncontainer"><button>About</button></div>
-        <!--
-        The two momentum sims above are virtual labs I use for online teaching. I wrote them because all other virtual versions of these activities that I found displayed the momenta, 
-       leaving little for students to discover on their own.
-
-        -->
-    </div>
       
-    <div class="card">
-      <a href="https://nhsegal.github.io/Explosions/">
-        <div class="cardtitle">Explosions</div>
-        <img src="imgs/explosion.png" alt="Momentum Carts">
-        </a>
-        <div class="buttoncontainer"><button>About</button></div>
-            <!--
-            The two momentum sims above are virtual labs I use for online teaching. I wrote them because all other virtual versions of these activities that I found displayed the momenta, 
-           leaving little for students to discover on their own.
-            -->
-    </div>
+          <div class="card">
+            <a href="https://nhsegal.github.io/PopperLab/">
+              <div class="cardtitle">Popper Lab</div>
+              <img src="imgs/popper.jpg" alt="Spring Gun">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="popperButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  This is a virtual version of a real lab I did with students during the energy unit. Students vary the mass of a projectile launched vertically from a spring toy and measure the maximum height. 
+                  From these measurements they determine the elastic energy stored in the toy. In the sim, the energy and color of the toy launcher is randomized. The rulers are draggable.           
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <a href="https://nhsegal.github.io/BalanceBoard/">
+              <div class="cardtitle">Balance Board</div>
+              <img src="imgs/pegboard.jpg" alt="Pegboard balance">
+            </a>
+          <div class="buttoncontainer"><button class="openmodal" id="pegboardButton">About</button></div>
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>
+                This is a virtual version of an activity with pegboard that students do to explore torque or center of mass. Although PhET and Physicsclassroom.com have excellent torque sims, 
+                I wanted something that clearly showed that the vertical placement of the blocks on the pegboard does not affect the conditions for equilibrium.               
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="card">
-      <a href="https://editor.p5js.org/nsegal/full/4X9VDG0Jk">
-        <div class="cardtitle">Diffraction</div>
-        <img src="imgs/moivre.jpg" alt="Moivre Pattern"">
-        </a>
-        <div class="buttoncontainer"><button>About</button></div>
-            <!--
-            Students experimentally determine the relationship between the spacing of two wave sources and the angle between interference maxima. They can then use this to determine the wavelength of a laser with a reall double slit and ruler.
+          <div class="card">
+            <a href="https://nhsegal.github.io/TheAmazingWaveGame/">
+              <div class="cardtitle">The Wave Game</div>
+              <img src="imgs/slinky.jpg" alt="Slinky">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="wavegameButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  Like PhET Waves on a String, but students are challenged to apply their knowledge of interference and reflection to knock over "cups" places near the string. 
+                  I tried coding the physics for wave motion in three or four ways. I learned a lot about the sorts of errors that result from various physical approximations, 
+                  but I ended up back where I started with not much to show for my efforts.
+                </p>
+              </div>
+            </div>  
+          </div>
 
-            -->
-    </div>
+          <div class="card">
+            <a href="https://nhsegal.github.io/StickyCollisions/">
+              <div class="cardtitle">Sticky Collisions</div>
+              <img src="imgs/collisioncart.jpg" alt="Momentum Carts">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="collisionButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  The two momentum sims Sticky Collisions and Explosions are virtual labs I use for online teaching. 
+                  I wrote them because all other virtual versions of these activities that I found displayed the momenta, 
+                  leaving little for students to discover on their own.
+                </p>
+              </div>
+            </div>  
+          </div>
+      
+          <div class="card">
+            <a href="https://nhsegal.github.io/Explosions/">
+              <div class="cardtitle">Explosions</div>
+              <img src="imgs/explosion.png" alt="Momentum Carts">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="explosionButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  The two momentum sims Sticky Collisions and Explosions are virtual labs I use for online teaching. 
+                  I wrote them because all other virtual versions of these activities that I found displayed the momenta, 
+                  leaving little for students to discover on their own.
+                </p>
+              </div>
+            </div>  
+          </div>
+
+          <div class="card">
+            <a href="https://editor.p5js.org/nsegal/full/4X9VDG0Jk">
+              <div class="cardtitle">Diffraction</div>
+              <img src="imgs/moivre.jpg" alt="Moivre Pattern"">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="diffractionButton">About</button></div>
+            <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+                <p>
+                Students experimentally determine the relationship between the spacing of two wave sources and the angle between interference maxima. 
+                They can then use this to determine the wavelength of a laser with a reall double slit and ruler. 
+                I do this lab in the classroom with concentric circles printed on overhead transparencies. 
+                It is easier for the students to follow than deriving the relationship using similar triangles and small angle approximations.
+                </p>
+              </div>
+            </div>  
+          </div>
+          
 
     <div class="card">
       <a href="http://nhsegal.github.io/Bowling-Ball-Activity/">
         <div class="cardtitle">Bowling Ball Activity</div>
         <img src="imgs/bowlingball.jpg" alt="Bowling Ball">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="bowlingballButton">About</button></div>
             <!--
        This very rudimentary sim was inspired by a bowling ball activity that I first learned of from physics teacher Mark Schober.
        My students often had difficulty idealizing the results of the physical lab, so this sim was a helpful supplement. 
@@ -138,7 +175,7 @@
         <div class="cardtitle">Linearizing Data</div>
         <img src="imgs/scatterplot.jpg" alt="Scatter Plot">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="linearizingButton">About</button></div>
             <!--
      Both the Modeling Physics curriculum and AP Physics C often ask students to make graphs that "linearize" their data. I developed an activity to help students in 9th grade physics understand this process.
        <a href="https://github.com/nhsegal/linearingData/blob/master/3.1%20Linearization%20activity%20wtih%20real%20stuff.pdf">Here is the handout. </a>The paragraphs in the activity are from <a href="http://www.denofinquiry.com/pdf/DOI%20vol%202%202007.02.03.pdf"><em>A Den of Inquiry</em></a>. I found out about it from Frank Noschese.
@@ -153,7 +190,7 @@
         <div class="cardtitle">Vectors</div>
         <img src="imgs/vector.png" alt="Vectors">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="vectorButton">About</button></div>
             <!--
     This sim is essentially a replica of a sim on vectors by PhET at UC Boulder.
        The PhET sim is coded in Flash, which is often blocked by browsers. I rewrote it in javascript mostly to
@@ -167,7 +204,7 @@
         <div class="cardtitle">Spacetime Diagrams</div>
         <img src="imgs/stdiagram.png"  alt="Spacetime diagram">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="stdiagramButton">About</button></div>
             <!--
     The inspiration for this sim comes from David Mermin's book <i>It's About Time</i>. That book can best describe how to interpret this sim.
        I have used the sim to illustrate points during lecture and to make figures for worksheets. The sim depicts the worldlines of two clocks -
@@ -182,7 +219,7 @@
         <div class="cardtitle">The Special Relativity Engine</div>
         <img src="imgs/mermin.jpg" style="height: 95px;" alt="Book cover">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="srengineButton">About</button></div>
             <!--
       Another sim inspired by <i>It's About Time</i>. Mermin devotes a whole chapter in the book to explaining the concept behind this sim.
        (His essay explaining it can also be found in <i>AJP</i> and <i>Boojums All The Way</i>.)
@@ -195,7 +232,7 @@
         <div class="cardtitle">The Principle of Least Action</div>
         <img src="imgs/leastaction.png" style="height: 95px;" alt="least action diagram">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="leastactionButton">About</button></div>
             <!--
        This sim and the following were inspired by Feynman's book <i>QED</i> and by sections of <i>Feynman's Lectures in Physics</i>.
        My apologies for not fully explaining the sims' use here or within the links themselves.
@@ -210,7 +247,7 @@
         <div class="cardtitle">Quantum Path Integrals</div>
         <img src="imgs/manypaths.png" style="height: 95px;" alt="many path diagram">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="qmpathButton">About</button></div>
             <!--
       
             -->
@@ -221,7 +258,7 @@
         <div class="cardtitle">Quantum Path Integrals, Old Version</div>
         <img src="imgs/multipaths.png" style="height: 95px;"  alt="multipaths diagram">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="qmpatholdButton">About</button></div>
             <!--
       
             -->
@@ -232,7 +269,7 @@
         <div class="cardtitle">Riemann Surfaces of Polynomials</div>
         <img src="imgs/riemannsurface.jpg" style="height: 95px;"  alt="Riemann surface">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="riemannsurface">About</button></div>
             <!--
        I have not used this in the classroom and have no intention to, but I greatly enjoyed coding this sim.
        Special thanks to the developer of the <a href="https://github.com/infusion/Complex.js/">Complex.js</a> library.
@@ -244,7 +281,7 @@
         <div class="cardtitle">Moebius Transformations and the Riemann Sphere</div>
         <img src="imgs/riemannsphere.jpg" alt="Riemann Sphere">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodal" id="moebiusButton">About</button></div>
             <!--
         I wanted to explore how Moebius Transformations correspond to motions of the Riemann sphere. You can use the mouse or trackpad to rotate the POV.
             -->
@@ -255,25 +292,19 @@
         <div class="cardtitle">Rubik's Cube</div>
         <img src="imgs/rubik.jpg" alt="Rubik cube">
         </a>
-        <div class="buttoncontainer"><button>About</button></div>
+        <div class="buttoncontainer"><button class="openmodel" id="rubikButton">About</button></div>
             <!--
          Inspired by a challenge from Dan Shiffman. You can use the mouse or trackpad to rotate the cube in space. Pressing the spacebar will make the cube randomly scramble and then unscramble.  
      
             -->
     </div>
 
+  </div>
+       <!--
+      Here are all the notes for the sims. To be displayed as modals.
+    -->
 
-      </div>
-      <div class="cardNote">
-        <div class="noteContent">
-          <span class="notesClose">&times;</span>
-          <p>
-            A virtual version of the constant velocity and constant acceleration labs popularized by Modeling Physics. The ruler is draggable. 
-            The direction of the toys can be reversed by clicking on their hoods. 
-          </p>
-  
-      </div>
-      </div>
+     
     
   </div>
     
@@ -297,7 +328,7 @@
            
   
     </footer>
- 
+<script src="script.js"></script>
 </body>
 
 </html>
