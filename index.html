@@ -23,14 +23,17 @@
     <div class="top">
       <div class="welcome">Welcome!</div>
       I am a physics teacher who has dabbled a little in coding over the years, and this website hosts some of the math- and physics-related simulations I've coded.  
-      Some of these simulations I have used in the classroom or for online teaching. Others are were pursued out of personal interest. 
-      Many of the simulations were developed using the fabulous <a href="https://p5js.org/">p5.js library</a>, which unfortunately means they won't run in the Safari browsers but should work in Firefox or Chrome. 
-      Also, I have not attempted to make the simulations compatible with tablets or mobile browsers. Nonetheless, I hope they may be of use to others.
+      Some of these simulations I have used in the classroom or for online teaching. Others were pursued out of personal interest or as exercises in coding. 
+      Most were developed using the fabulous <a href="https://p5js.org/">p5.js library</a>, which unfortunately means they won't run in the 
+      Safari browsers but should work in Firefox or Chrome. I have not attempted to make the simulations compatible with tablets or mobile browsers, and some of 
+      these sims need a great deal more polish. Nonetheless, I hope they may be of use to others, if not "as-if" then perhaps as either inspriration for someone
+      to code their own sims for teaching.  
     </div>
 
     <div class="middle">
       <div class="middletitle">Simulations </div> 
-        <div class="deck">
+      <div class="deck">
+
           <div class="card">
             <a href="https://nhsegal.github.io/MotionLab/">
               <div class="cardtitle">1-D Motion Lab</div>
@@ -71,6 +74,7 @@
               <img src="imgs/pegboard.jpg" alt="Pegboard balance">
             </a>
           <div class="buttoncontainer"><button class="openmodal" id="pegboardButton">About</button></div>
+          
           <div class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -80,7 +84,28 @@
               </p>
             </div>
           </div>
-        </div>
+          </div>
+
+          <div class="card">
+            <a href="http://nhsegal.github.io/Bowling-Ball-Activity/">
+              <div class="cardtitle">Bowling Ball Activity</div>
+              <img src="imgs/bowlingball.jpg" alt="Bowling Ball">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="bowlingballButton">About</button></div>
+              
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    This very rudimentary sim was inspired by a bowling ball activity that I first learned of from physics teacher Mark Schober.
+                    My students often had difficulty idealizing the results of the physical lab, so this sim was a helpful supplement. 
+                    I used the handout <a href="https://github.com/nhsegal/Bowling-Ball-Activity/blob/gh-pages/2.0%20Bowling%20Ball%20Activity.pdf">here</a> as a guide for them.
+                    (If the sim has trouble loading, open the developer console in Chrome or the browser console in Firefox and reload the webpage. You can then close the console window.)
+                    
+                  </p>
+                </div>
+              </div>
+          </div>
 
           <div class="card">
             <a href="https://nhsegal.github.io/TheAmazingWaveGame/">
@@ -147,7 +172,8 @@
               <span class="close">&times;</span>
                 <p>
                 Students experimentally determine the relationship between the spacing of two wave sources and the angle between interference maxima. 
-                They can then use this to determine the wavelength of a laser with a reall double slit and ruler. 
+                The slider controls the spacing and the red circle can be moved to measure angles.
+                Students can then apply the relationship they determined to find the wavelength of a real laser with a reall double slit and ruler. 
                 I do this lab in the classroom with concentric circles printed on overhead transparencies. 
                 It is easier for the students to follow than deriving the relationship using similar triangles and small angle approximations.
                 </p>
@@ -155,164 +181,201 @@
             </div>  
           </div>
           
+          <div class="card">
+            <a href=href="http://nhsegal.github.io/linearizingData/">
+              <div class="cardtitle">Linearizing Data</div>
+              <img src="imgs/scatterplot.jpg" alt="Scatter Plot">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="linearizingButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  Both the Modeling Physics curriculum and AP Physics C often ask students to make graphs that "linearize" their data. 
+                  I developed an activity to help students in 9th grade physics understand this process.
+                  <a href="https://github.com/nhsegal/linearingData/blob/master/3.1%20Linearization%20activity%20wtih%20real%20stuff.pdf">Here is the handout. 
+                  </a>The paragraphs in the activity are from <a href="http://www.denofinquiry.com/pdf/DOI%20vol%202%202007.02.03.pdf"><em>A Den of Inquiry</em></a>. I found out about it from Frank Noschese.
+                  I have not yet tried out the sim with students. I should probably revisit this code and optimize the noise in the datasets.
+                </p>
+              </div>
+            </div> 
+          </div>  
+            
+          <div class="card">
+            <a href="https://nhsegal.github.io/VectorSim/">
+              <div class="cardtitle">Vectors</div>
+              <img src="imgs/vector.png" alt="Vectors">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="vectorButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  This sim is essentially a replica of a sim on vectors by PhET at UC Boulder, 
+                  which I have found it helpful to illustrate ideas during the first lecture introducing vectors.
+                  The PhET sim was originally coded in Flash, and there was a period of several years
+                  during which Flash was typically blocked by browsers but PhET had not released an HTML5 version of the sim. 
+                  During that time I wrote this sim to practice coding and fill a need. 
+                  The interactivity is a little glitchy, but because PhET has now released a new vector sim, 
+                  I don't think I will work on the sim further.
+                </p>
+              </div>
+            </div>
+          </div>
 
-    <div class="card">
-      <a href="http://nhsegal.github.io/Bowling-Ball-Activity/">
-        <div class="cardtitle">Bowling Ball Activity</div>
-        <img src="imgs/bowlingball.jpg" alt="Bowling Ball">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="bowlingballButton">About</button></div>
-            <!--
-       This very rudimentary sim was inspired by a bowling ball activity that I first learned of from physics teacher Mark Schober.
-       My students often had difficulty idealizing the results of the physical lab, so this sim was a helpful supplement. 
-       I used the handout <a href="https://github.com/nhsegal/Bowling-Ball-Activity/blob/gh-pages/2.0%20Bowling%20Ball%20Activity.pdf">here</a> as a guide for them.
-       (If the sim has trouble loading, open the developer console in Chrome or the browser console in Firefox and reload the webpage. You can then close the console window.)
-            -->
+          <div class="card">
+            <a href="http://nhsegal.github.io/SRsim/">
+              <div class="cardtitle">Spacetime Diagrams</div>
+              <img src="imgs/stdiagram.png"  alt="Spacetime diagram">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="stdiagramButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  The inspiration for this sim comes from David Mermin's book <i>It's About Time</i>. That book can best describe how to interpret this sim.
+                  I have used the sim to illustrate points during lecture and to make figures for worksheets. The sim depicts the worldlines of two clocks -
+                  one colored black, one colored red. The user can adjust the velocity of each clock and see how time dilates accordingly.
+                  The user can also chose to display lines marking simultaneous events for the black clock and/or the red clock.
+                  One can develop a sense of how two clocks in relative motion each measure the other as time dilated.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href=href="http://nhsegal.github.io/RelativityEngine/">
+              <div class="cardtitle">The Special Relativity Engine</div>
+              <img src="imgs/mermin.jpg" style="height: 95px;" alt="Book cover">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="srengineButton">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    Another sim inspired by <i>It's About Time</i>. Mermin devotes a whole chapter in the book to explaining the concept behind this sim.
+                    (His essay explaining it can also be found in <i>AJP</i> and <i>Boojums All The Way</i>.)
+                    Here is a link to the student handout.
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <a href="http://nhsegal.github.io/LeastA/">
+              <div class="cardtitle">The Principle of Least Action</div>
+              <img src="imgs/leastaction.png" style="height: 95px;" alt="least action diagram">
+            </a>
+            <div class="buttoncontainer"><button class="openmodal" id="leastactionButton">About</button></div>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  The least action sim and the quantum path integral sims were inspired by Feynman's book <i>QED</i> and by sections of <i>Feynman's Lectures in Physics</i>.
+                  My apologies for not fully explaining the sims' use here or within the links themselves.
+                  Edwin F. Taylor describes educational software and an "Action first" approach to physics <a href="http://www.eftaylor.com/leastaction.html">here</a>.
+                  I originally thought I could develop something along these lines, before realizing that the project was too ambitious for me.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://nhsegal.github.io/photons/">
+              <div class="cardtitle">Quantum Path Integrals</div>
+              <img src="imgs/manypaths.png" style="height: 95px;" alt="many path diagram">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="qmpathButton">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    The least action sim and the quantum path integral sims were inspired by Feynman's book <i>QED</i> and by sections of <i>Feynman's Lectures in Physics</i>.
+                    My apologies for not fully explaining the sims' use here or within the links themselves.
+                    Edwin F. Taylor describes educational software and an "Action first" approach to physics <a href="http://www.eftaylor.com/leastaction.html">here</a>.
+                    I originally thought I could develop something along these lines, before realizing that the project was too ambitious for me.
+                  </p>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="card">
+            <a href="http://nhsegal.github.io/MultiA/">
+              <div class="cardtitle">Quantum Path Integrals, Old Version</div>
+              <img src="imgs/multipaths.png" style="height: 95px;"  alt="multipaths diagram">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="qmpatholdButton">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    The least action sim and the quantum path integral sims were inspired by Feynman's book <i>QED</i> and by sections of <i>Feynman's Lectures in Physics</i>.
+                    My apologies for not fully explaining the sims' use here or within the links themselves.
+                    Edwin F. Taylor describes educational software and an "Action first" approach to physics <a href="http://www.eftaylor.com/leastaction.html">here</a>.
+                    I originally thought I could develop something along these lines, before realizing that the project was too ambitious for me.
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <a href="https://nhsegal.github.io/ThreeDGraph/">
+              <div class="cardtitle">Riemann Surfaces of Polynomials</div>
+              <img src="imgs/riemannsurface.jpg" style="height: 95px;"  alt="Riemann surface">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="riemannsurface">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    I have not used this in the classroom and have no intention to, but I greatly enjoyed coding this sim.
+                    Special thanks to the developer of the <a href="https://github.com/infusion/Complex.js/">Complex.js</a> library.
+                    The mouse controls allow the user to pan and zoom.
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <a href="https://nhsegal.github.io/RiemannSphere/">
+              <div class="cardtitle">Moebius Transformations and the Riemann Sphere</div>
+              <img src="imgs/riemannsphere.jpg" alt="Riemann Sphere">
+              </a>
+              <div class="buttoncontainer"><button class="openmodal" id="moebiusButton">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                  I wanted to explore how Moebius Transformations correspond to motions of the Riemann sphere. 
+                  You can use the mouse or trackpad to rotate the POV.
+                  </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <a href="https://nhsegal.github.io/RubiksCube/">
+              <div class="cardtitle">Rubik's Cube</div>
+              <img src="imgs/rubik.jpg" alt="Rubik cube">
+              </a>
+              <div class="buttoncontainer"><button class="openmodel" id="rubikButton">About</button></div>
+              <div class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p> 
+                  Inspired by a challenge from Dan Shiffman. You can use the mouse or trackpad to rotate the cube in space. 
+                  Pressing the spacebar will make the cube randomly scramble and then unscramble.  
+                  </p>
+                </div>
+              </div>
+          </div>
+      </div>
     </div>
-
-    <div class="card">
-      <a href=href="http://nhsegal.github.io/linearizingData/">
-        <div class="cardtitle">Linearizing Data</div>
-        <img src="imgs/scatterplot.jpg" alt="Scatter Plot">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="linearizingButton">About</button></div>
-            <!--
-     Both the Modeling Physics curriculum and AP Physics C often ask students to make graphs that "linearize" their data. I developed an activity to help students in 9th grade physics understand this process.
-       <a href="https://github.com/nhsegal/linearingData/blob/master/3.1%20Linearization%20activity%20wtih%20real%20stuff.pdf">Here is the handout. </a>The paragraphs in the activity are from <a href="http://www.denofinquiry.com/pdf/DOI%20vol%202%202007.02.03.pdf"><em>A Den of Inquiry</em></a>. I found out about it from Frank Noschese.
-       I have not yet tried out the sim with students. I don't think the sim will be as effective as the activity, but it might be an aid students find useful.  <p></p>
-       
-            -->
-    </div>
-
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/VectorSim/">
-        <div class="cardtitle">Vectors</div>
-        <img src="imgs/vector.png" alt="Vectors">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="vectorButton">About</button></div>
-            <!--
-    This sim is essentially a replica of a sim on vectors by PhET at UC Boulder.
-       The PhET sim is coded in Flash, which is often blocked by browsers. I rewrote it in javascript mostly to
-       practice coding. I do not use it for a student activity, but I have found it helpful to illustrate ideas during the first lecture introducing vectors.
-  
-            -->
-    </div>
-
-    <div class="card">
-      <a href="http://nhsegal.github.io/SRsim/">
-        <div class="cardtitle">Spacetime Diagrams</div>
-        <img src="imgs/stdiagram.png"  alt="Spacetime diagram">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="stdiagramButton">About</button></div>
-            <!--
-    The inspiration for this sim comes from David Mermin's book <i>It's About Time</i>. That book can best describe how to interpret this sim.
-       I have used the sim to illustrate points during lecture and to make figures for worksheets. The sim depicts the worldlines of two clocks -
-       one colored black, one colored red. The user can adjust the velocity of each clock and see how time dilates accordingly.
-       The user can also chose to display lines marking simultaneous events for the black clock and/or the red clock.
-       One can develop a sense of how two clocks in relative motion each measure the other as time dilated.
-            -->
-    </div>
-
-    <div class="card">
-      <a href=href="http://nhsegal.github.io/RelativityEngine/">
-        <div class="cardtitle">The Special Relativity Engine</div>
-        <img src="imgs/mermin.jpg" style="height: 95px;" alt="Book cover">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="srengineButton">About</button></div>
-            <!--
-      Another sim inspired by <i>It's About Time</i>. Mermin devotes a whole chapter in the book to explaining the concept behind this sim.
-       (His essay explaining it can also be found in <i>AJP</i> and <i>Boojums All The Way</i>.)
-       Here is a link to the student handout.
-            -->
-    </div>
-
-    <div class="card">
-      <a href="http://nhsegal.github.io/LeastA/">
-        <div class="cardtitle">The Principle of Least Action</div>
-        <img src="imgs/leastaction.png" style="height: 95px;" alt="least action diagram">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="leastactionButton">About</button></div>
-            <!--
-       This sim and the following were inspired by Feynman's book <i>QED</i> and by sections of <i>Feynman's Lectures in Physics</i>.
-       My apologies for not fully explaining the sims' use here or within the links themselves.
-       Edwin F. Taylor describes educational software and an "Action first" approach to physics <a href="http://www.eftaylor.com/leastaction.html">here</a>.
-       I originally thought I could develop something along these lines, before realizing that the project was too ambitious for me.
-
-            -->
-    </div>
-
-    <div class="card">
-      <a href="http://nhsegal.github.io/photons/">
-        <div class="cardtitle">Quantum Path Integrals</div>
-        <img src="imgs/manypaths.png" style="height: 95px;" alt="many path diagram">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="qmpathButton">About</button></div>
-            <!--
-      
-            -->
-    </div>
-
-    <div class="card">
-      <a href="http://nhsegal.github.io/MultiA/">
-        <div class="cardtitle">Quantum Path Integrals, Old Version</div>
-        <img src="imgs/multipaths.png" style="height: 95px;"  alt="multipaths diagram">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="qmpatholdButton">About</button></div>
-            <!--
-      
-            -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/ThreeDGraph/">
-        <div class="cardtitle">Riemann Surfaces of Polynomials</div>
-        <img src="imgs/riemannsurface.jpg" style="height: 95px;"  alt="Riemann surface">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="riemannsurface">About</button></div>
-            <!--
-       I have not used this in the classroom and have no intention to, but I greatly enjoyed coding this sim.
-       Special thanks to the developer of the <a href="https://github.com/infusion/Complex.js/">Complex.js</a> library.
-            -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/RiemannSphere/">
-        <div class="cardtitle">Moebius Transformations and the Riemann Sphere</div>
-        <img src="imgs/riemannsphere.jpg" alt="Riemann Sphere">
-        </a>
-        <div class="buttoncontainer"><button class="openmodal" id="moebiusButton">About</button></div>
-            <!--
-        I wanted to explore how Moebius Transformations correspond to motions of the Riemann sphere. You can use the mouse or trackpad to rotate the POV.
-            -->
-    </div>
-
-    <div class="card">
-      <a href="https://nhsegal.github.io/RubiksCube/">
-        <div class="cardtitle">Rubik's Cube</div>
-        <img src="imgs/rubik.jpg" alt="Rubik cube">
-        </a>
-        <div class="buttoncontainer"><button class="openmodel" id="rubikButton">About</button></div>
-            <!--
-         Inspired by a challenge from Dan Shiffman. You can use the mouse or trackpad to rotate the cube in space. Pressing the spacebar will make the cube randomly scramble and then unscramble.  
-     
-            -->
-    </div>
-
-  </div>
-       <!--
-      Here are all the notes for the sims. To be displayed as modals.
-    -->
-
-     
-    
-  </div>
     
     <div class="bottom">
     </div>
   
-
-
     <footer>
       <div><b>Credits: </b></div>
       <div class="credittext">
