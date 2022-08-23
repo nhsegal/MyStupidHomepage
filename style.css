@@ -1,15 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: 0;
     font-weight: 100;
 }
-
 
 header {
   background-color: #1F2937;
   color:  #F9FAF8;
-  font-size: 28px;
-  padding: 16px 64px;
+  font-size: 2em; /* 28px; */
+  padding: 0.6em 1.8em;/* 16px 64px; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -19,9 +18,9 @@ header ul {
   list-style: none;
   display: flex;
   color: #E5E7EB;
-  font-size: 18px;
+  font-size: 0.6em; /* 18px; */
   gap: 1em;
-  margin: 0px;
+  margin: 0;
   justify-content: flex-end;
 }
 
@@ -34,9 +33,7 @@ header a, header a:link, header a:visited {
   background: #E5E7EB;
   color: #1F2937;
   text-align: left;
-  padding-left: 50px; 
-  padding-right: 50px;
-  padding-bottom: 2px;
+  padding: 1em 3em;
 }
 
 .top a, .top a:link, .top a:visited {
@@ -46,28 +43,29 @@ header a, header a:link, header a:visited {
 
 .welcome {
   background: inherit;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 900;
-  padding-top: 10px; 
-  padding-bottom: 10px;
+  padding-bottom: .5em;
 }
 
-.middletitle{
-  padding: 10px 50px;
-  font-size: 18px;
+.middle {
+  padding: 1em 3em;
+}
+
+.middletitle {
+  font-size: 1.5em;
   font-weight: 900;
   color: #1F2937;
 }
 
 .deck {
-  padding: 5px 50px;
+  padding: 1.4em 0;
   display: flex;
   justify-content:flex-start;
   flex-flow: row wrap;
   gap: 20px;
   padding-bottom: 50px;
 }
-
 
 .deck a, deck a:link, deck a:visited {
   text-decoration: none;
@@ -79,22 +77,22 @@ header a, header a:link, header a:visited {
   flex-direction: column;
   border-radius: 20px;;
   border: 1px solid #1F2937;
-  height: 168px;
-  width: 180px;
+  height: 11em;
+  width: 12em; 
   align-items: center;
   padding: 7px 3px;
 }
 
 .cardtitle {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em; 
   text-align: center;
 }
 
 .card img {
-  margin-top: 0px;
-  max-width: 170px;
-  max-height: 115px;
+  margin-top: 3px;
+  max-height: 7em; /*115px*/
+  max-width: 10em;
   object-fit: contain;
   display: block;
   margin-left: auto;
@@ -176,4 +174,16 @@ button {
   float: right;
   text-decoration: none;
   cursor: pointer;
+}
+
+.coding-stuff .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coding-stuff #list-title {
+  font-size: 20;
+  font-weight: 700;
+
 }
