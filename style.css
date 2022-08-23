@@ -64,7 +64,7 @@ header a, header a:link, header a:visited {
   justify-content:flex-start;
   flex-flow: row wrap;
   gap: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 1em;
 }
 
 .deck a, deck a:link, deck a:visited {
@@ -100,25 +100,29 @@ header a, header a:link, header a:visited {
 }
 
 .cardtext {
-  font-size: 14px;
+  font-size: 1em; /*14px*/
   text-align: center;
 }
 
 .about:hover {
   display: block;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 footer {
   background-color: #1F2937;
   color:  #F9FAF8;
-  font-size: 14px;
-  padding: 16px 64px;
+  font-size: .9em;
+  padding: 1em 2.75em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
+
+.footer-title {
+  padding-bottom: .2em;
+
+ }
 
 footer a, footer a:link, footer a:visited {
   text-decoration: underline;
@@ -138,7 +142,6 @@ button {
   margin-top: auto;
 }
 
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -155,21 +158,21 @@ button {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 0.4em 1em;/*20px;*/
   border: 1px solid #888;
   border-radius: 12px;
   width: 45%;
-  font-family: 'Roboto', sans-serif;
   font-size: 100%;
   font-weight: 200;
   color: #4C6A94;
   cursor: context-menu;
 }
-.notesClose {
+.close {
   float: right;
+  font-size: 150%;
 }
 
-.notesClose:focus {
+.close:focus {
   color: #000;
   float: right;
   text-decoration: none;
@@ -182,8 +185,67 @@ button {
   align-items: center;
 }
 
-.coding-stuff #list-title {
-  font-size: 20;
-  font-weight: 700;
+.coding-stuff .table {
+  display: flex;
+  flex-direction: column;
+  width: 60em;
+}
 
+.coding-stuff .list-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: .8em;
+}
+
+.coding-stuff .table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  align-items: baseline;
+  padding-bottom: 1em;
+}
+
+.coding-stuff .title-row {
+  padding-bottom: 1em;
+}
+
+.coding-stuff .table-row .assign-col {
+  width: 7em;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.table-row .name-col {
+  width: 9.5em;
+}
+
+.fake-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  border-radius: .2em;
+}
+
+.assign-col.fake-button  {
+  background-color: rgb(240,190,190);
+  width: 12em;
+}
+
+.repo-col.fake-button {
+  background-color: rgb(150,200,150);
+  width: 6em;
+}
+
+.preview-col.fake-button {
+  background-color: rgb(130,150,250);
+  width: 8em;
+}
+
+.table-row a, .table-row a:link, .table-row a:visited {
+  text-decoration: none;
+  color:  #F9FAF8;
 }
