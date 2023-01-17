@@ -230,13 +230,25 @@ button {
   border-radius: .2em;
 }
 
-.assign-col.fake-button  {
-  background-color: rgb(240,190,190);
+button.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  border-radius: .2em;
+  color:  #F9FAF8;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.assign-col {
+  background-color: rgb(240,120,120);
   width: 12em;
 }
 
-.repo-col.fake-button {
-  background-color: rgb(150,200,150);
+.repo-col {
+  background-color: rgb(120,200,120);
   width: 6em;
 }
 
@@ -245,10 +257,12 @@ button {
   width: 8em;
 }
 
-.preview-col.fake-button {
+.preview-col {
   background-color: rgb(130,150,250);
   width: 8em;
 }
+
+
 
 .table-row a, .table-row a:link, .table-row a:visited {
   text-decoration: none;
