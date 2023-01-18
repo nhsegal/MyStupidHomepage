@@ -1,185 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Code Portfolio</title>
+    <meta name="description" content="Personal Webpage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Code Portfolio</title>
-  <meta name="description" content="Personal Webpage">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body class="coding-stuff">
+    <header>
+      <strong>CS Portfolio</strong>
+      <ul>
+        <li><a href="index.html">My Sims</a></li>
+        <li><a href="otherlinks.html">Links to Other Resources</a></li>
+      </ul>
+    </header>
 
-<body class="coding-stuff">
-  <header>
-    <strong>CS Portfolio</strong>
-    <ul>
-      <li><a href="index.html">My Sims</a></li>
-      <li><a href="otherlinks.html">Links to Other Resources</a></li>
-    </ul>
-   
-  </header>
+    <div class="top">
+      <div class="welcome">About</div>
+      I first started to explore coding by dabbling in Python many years ago.
+      Solving problems on
+      <a href="https://projecteuler.net/">Project Euler</a> taught me about
+      recursion, data types, big-O notation. I later explored physical computing
+      with <a href="https://www.arduino.cc/">Arduino</a> microcontrollers to see
+      if they could be incorporated into my physics classes. That led me to
+      <a href="https://processing.org/Processing"> Processing</a> and eventually
+      to <a href="https://p5js.org/p5.js">p5.js</a>. I have explored
+      <a href="https://vpython.org/">vPython</a> and
+      <a href="https://www.glowscript.org/">Glowscript</a>
+      and incorporated some coding in these languages in my physics classes. I
+      have also completed some online courses in data science and machine
+      learning.
+      <p>
+        Most recently, I have worked through Harvard's
+        <a href="https://cs50.harvard.edu/x/2022/">CS50</a> online course. Upon
+        completing that I have begun to work my way through
+        <a href="https://www.theodinproject.com/about">The Odin Project</a>
+        curriculum in full stack web development. Below are my Odin Project
+        submissions listed in reverse chronological order.
+      </p>
+    </div>
 
-  <div class="top">
-    <div class="welcome">About</div>
-    I first started to explore coding by dabbling in Python many years ago. Solving problems on 
-    <a href='https://projecteuler.net/'>Project Euler</a> taught me about recursion, data types, big-O notation.
-    I later explored physical computing with  <a href='https://www.arduino.cc/'>Arduino</a> microcontrollers to see 
-    if they could be incorporated into my physics classes. That led me to <a href='https://processing.org/Processing'>
-    Processing</a>  and eventually to <a href='https://p5js.org/p5.js'>p5.js</a>. 
-    I have explored <a href='https://vpython.org/'>vPython</a> and <a href = 'https://www.glowscript.org/'>Glowscript</a> 
-    and incorporated some coding in these languages in my physics classes. I have also completed some online courses 
-    in data science and machine learning.
-    <p>
-    Most recently, I have worked through Harvard's <a href='https://cs50.harvard.edu/x/2022/'>CS50</a> online course. 
-    Upon completing that I have begun to work my way through <a href='https://www.theodinproject.com/about'>The Odin Project</a> 
-    curriculum in full stack web development. Below are my Odin Project submissions listed in reverse chronological order. 
-    </p>
-  
- </div>
-
- <div class="middle">
-  
-  <div class="title-row"></div>
-        <div class="list-title">Odin Project Submissions</div>
-   
-    <div class="table">
-      
+    <div class="middle">
+      <div class="title-row"></div>
+      <div class="list-title">Odin Project Submissions</div>
+      <div class="table">
         <div class="table-row">
-          <div class="name-col">Recipes</div>
-         <button class="portfolio assign-col" type="button" onclick="location.href='https://www.theodinproject.com/lessons/foundations-recipes'">Assignment</button>
-        <button class="portfolio repo-col" type="button" onclick="location.href='https://github.com/nhsegal/odin-recipes'">Repo</button>
-          
-          <button class="portfolio preview-col"  type="button" onclick="location.href='https://nhsegal.github.io/odin-recipes/'">Live Preview</button>
+          <div class="name-col">CV App</div>
+          <button
+          type="button"
+          onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-cv-application'"
+          class="assign-col portfolio">Assignment</button
+          >
+          <button 
+          type="button"
+          onclick="location.href='https://github.com/nhsegal/cv-project'"
+          class="repo-col portfolio">Repo</button
+          >
+          <button 
+          type="button"
+          onclick="location.href='https://nhsegal.github.io/cv-project/'"
+          class="preview-col portfolio">Live Preview</button
+          >
         </div>
-        
         <div class="table-row">
-          <div class="name-col">Landing Page</div>
-          <a href="https://www.theodinproject.com/lessons/foundations-landing-page"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/landing-page"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/landing-page/"><div class="preview-col fake-button">Live Preview</div></a>
+          <div class="name-col">Battleship</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-battleship'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/battleship'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://nhsegal.github.io/battleship/'"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
         </div>
-        
         <div class="table-row">
-          <div class="name-col">Rock Paper Scissors</div>
-          <a href="https://www.theodinproject.com/lessons/foundations-rock-paper-scissors"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/rock-paper-scissors"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/rock-paper-scissors/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Etch-a-Sketch</div>
-          <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/etch-a-sketch/"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/etch-a-sketch/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Calculator</div>
-          <a href="https://www.theodinproject.com/lessons/foundations-calculator"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/calculator"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/calculator/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Sign-up Form</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="hhttps://github.com/nhsegal/sign-up-form"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/sign-up-form/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Admin Dashboard</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/admin-dashboard"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/admin-dashboard/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Library</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-library"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/library"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/library/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Tic Tac Toe</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-library"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/tic-tac-toe-AI"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/tic-tac-toe-AI/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Restaurant Page</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-library"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/restaurant"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/restaurant/#"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">To Do App</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-todo-list"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/todoredo"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/todoredo/"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Weather App</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-weather-app"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/weather"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/weather/#"><div class="preview-col fake-button">Live Preview</div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Recursion</div>
-          <a href="https://www.theodinproject.com/lessons/javascript-recursion"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/recursion"><div class="repo-col fake-button">Repo</div></a>
-          <a href="#"><div class=" placeholder"></div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Linked Lists</div>
-          <a href="https://www.theodinproject.com/lessons/javascript-linked-lists"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/linkedList"><div class="repo-col fake-button">Repo</div></a>
-          <a href="#"><div class=" placeholder"></div></a>
-        </div>
-
-        <div class="table-row">
-          <div class="name-col">Binary Search Trees</div>
-          <a href="https://www.theodinproject.com/lessons/javascript-binary-search-trees"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/bst"><div class="repo-col fake-button">Repo</div></a>
-          <a href="#"><div class=" placeholder"></div></a>
+          <div class="name-col">Unit Testing</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-testing-practice'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/unitTestPractice'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button href="#" class="placeholder portfolio"></button>
         </div>
 
         <div class="table-row">
           <div class="name-col">Knights Travails</div>
-          <a href="https://www.theodinproject.com/lessons/javascript-knights-travails"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/knightsTravails"><div class="repo-col fake-button">Repo</div></a>
-          <a href="#"><div class=" placeholder"></div></a>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/javascript-knights-travails'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/knightsTravails'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button href="#" class="portfolio placeholder"></button>
         </div>
-
         <div class="table-row">
-          <div class="name-col">Unit Testing</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-testing-practice"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/unitTestPractice"><div class="repo-col fake-button">Repo</div></a>
-          <a href="#"><div class=" placeholder"></div></a>
+          <div class="name-col">Binary Search Trees</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/javascript-binary-search-trees'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/bst'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button href="#" class="placeholder portfolio"></button>
         </div>
-
         <div class="table-row">
-          <div class="name-col">Battleship</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-battleship"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/battleship"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/battleship/"><div class="preview-col fake-button">Live Preview</div></a>
+          <div class="name-col">Linked Lists</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/javascript-linked-lists'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/linkedList'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button type="button" href="#" class="portfolio placeholder"></button>
         </div>
-
         <div class="table-row">
-          <div class="name-col">CV App</div>
-          <a href="https://www.theodinproject.com/lessons/node-path-javascript-cv-application"><div class="assign-col fake-button">Assignment</div></a>
-          <a href="https://github.com/nhsegal/cv-project"><div class="repo-col fake-button">Repo</div></a>
-          <a href="https://nhsegal.github.io/cv-project/"><div class="preview-col fake-button">Live Preview</div></a>
+          <div class="name-col">Recursion</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/javascript-recursion'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/recursion'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button href="#" type="button" class="portfolio placeholder"></button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Weather App</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-weather-app'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/weather'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://nhsegal.github.io/weather/#'"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">To Do App</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-todo-list'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/todoredo'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://nhsegal.github.io/todoredo/'"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Restaurant Page</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-library'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/restaurant'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://nhsegal.github.io/restaurant/#'"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Tic Tac Toe</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-library'"
+            type="button"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/tic-tac-toe-AI'"
+            type="button"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/tic-tac-toe-AI/'"
+            type="button"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Library</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-javascript-library'"
+            type="button"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/library'"
+            type="button"
+            class="repo-col portfolio">
+            Repo
+          </button>
+
+          <button
+            onclick="location.href='https://nhsegal.github.io/library/'"
+            type="button"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Admin Dashboard</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard'"
+            type="button"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+
+          <button
+            onclick="location.href='https://github.com/nhsegal/admin-dashboard'"
+            type="button"
+            class="repo-col portfolio">
+            Repo
+          </button>
+
+          <button
+            onclick="location.href='https://nhsegal.github.io/admin-dashboard/'"
+            type="button"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Sign-up Form</div>
+          <button
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form'"
+            class="assign-col portfolio">
+            Assignment
+          </button>
+          <button
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/sign-up-form'"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/sign-up-form/'"
+            class="preview-col portfolio"
+            type="button">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Calculator</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/foundations-calculator'"
+            class="assign-col portfolio"
+            type="button">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/calculator'"
+            type="button"
+            class="repo-col portfolio">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/calculator/'"
+            class="preview-col portfolio"
+            type="button">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Etch-a-Sketch</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/foundations-etch-a-sketch'"
+            class="assign-col portfolio"
+            type="button">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/etch-a-sketch/'"
+            class="repo-col portfolio"
+            type="button">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/etch-a-sketch/'"
+            class="preview-col portfolio"
+            type="button">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Rock Paper Scissors</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/foundations-rock-paper-scissors'"
+            class="assign-col portfolio"
+            type="button">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/rock-paper-scissors'"
+            class="repo-col portfolio"
+            type="button">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/rock-paper-scissors'"
+            class="preview-col portfolio">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Landing Page</div>
+          <button
+            onclick="location.href='https://www.theodinproject.com/lessons/foundations-landing-page'"
+            type="button"
+            class="portfolio assign-col">
+            Assignment
+          </button>
+          <button
+            onclick="location.href='https://github.com/nhsegal/landing-page'"
+            type="button"
+            class="portfolio repo-col">
+            Repo
+          </button>
+          <button
+            onclick="location.href='https://nhsegal.github.io/landing-page/'"
+            type="button"
+            class="portfolio preview-col">
+            Live Preview
+          </button>
+        </div>
+        <div class="table-row">
+          <div class="name-col">Recipes</div>
+          <button
+            class="portfolio assign-col"
+            type="button"
+            onclick="location.href='https://www.theodinproject.com/lessons/foundations-recipes'">
+            Assignment
+          </button>
+          <button
+            class="portfolio repo-col"
+            type="button"
+            onclick="location.href='https://github.com/nhsegal/odin-recipes'">
+            Repo
+          </button>
+          <button
+            class="portfolio preview-col"
+            type="button"
+            onclick="location.href='https://nhsegal.github.io/odin-recipes/'">
+            Live Preview
+          </button>
         </div>
 
+        <!-- 
+      
 
+
+
+  !-->
+      </div>
     </div>
- </div>
-</body>
+  </body>
+</html>
