@@ -33,15 +33,11 @@ header a:link,
 header a:visited {
   text-decoration: none;
   color: #e5e7eb;
-  transition: all .2s ease-out 0s;
 }
 
 header a:hover {
-  text-shadow:
-  -.2px -.2px 0 #e5e7eb,
-  .2px -.2px 0 #e5e7eb,
-  -.2px .2px 0 #e5e7eb,
-  .2px .2px 0 #e5e7eb;
+  text-decoration: underline;
+
 }
 
 .top {
@@ -162,8 +158,8 @@ button {
   color: #1f2937;
   padding: 5px 20px;
   border: 1px solid gray;
-  transition: background-color .2s ease-out 0s;
-  transition: color .2s ease-out 0s;
+  transition: all .2s ease-in 0s;
+
 }
 
 button:hover {
